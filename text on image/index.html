@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 50vw;
+            border: 3px solid red;
+            box-shadow: 15px 15px 17px rgb(128, 239, 128);
+            padding: 2rem;
+            margin-top: 4rem;
+            /* display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* font-size: 1.6rem; */
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 2rem auto;
+            color: aquamarine;
+        }
+        select{
+            display: inline-block;
+        }
+
+        .parent {
+            margin: 8px;
+            padding: 8px 0px;
+
+        }
+
+        label {
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        .style1 {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Placeholder Image Path Genrater</h1>
+
+        <label for="selectImage">Image size : </label>
+        <select name="" id="selectImage">
+            <option value="100X50">small(100X50)</option>
+            <option value="200X200">medium small(200X200)</option>
+            <option value="350X150">medium(350X150)</option>
+            <option value="400X400">square(400X400)</option>
+            <option value="650X350">larga(650X350)</option>
+            <option value="800X600">x-large(800X600)</option>
+            <option value="1920X1080">full-HD(1920X1080)</option>
+        </select>
+
+        <div class="parent">
+            <label for="nameOnImage">Text on image : </label>
+            <input type="text" id="nameOnImage">
+        </div>
+        <div class="parent">
+            <label for="background-color">color of background : </label>
+            <input type="color" class="style1" value="#ADD8E6" id="background-color">
+        </div>
+        <div class="parent">
+            <label for="textColor">color of text : </label>
+            <input type="color" class="style1" value="#000000" id="textColor">
+        </div>
+
+        <div class="box">
+            <img src="" alt="">
+            <br>
+            <label for="urlPath"></label>
+            <textarea name="" id="" cols="40" rows="3">Link will be available here : </textarea>
+        </div>
+    </div>
+
+    <script>
+        const select = document.querySelector('select')
+        const inputall = document.querySelectorAll('input')
+        const myimg = document.querySelector('img')
+        const textArea = document.querySelector('textarea')
+
+        let urlObj = {};
+
+        removehashtag = (str) => {
+            return str.replace("#", "");
+        }
+
+        addPlus = (str) => {
+            return str.split(" ").join("+");
+        }
+
+        const createImagePath = () => {
+            urlObj.size = select.value;
+            urlObj.text = addPlus(inputall[0].value);
+            urlObj.bgcol = removehashtag(inputall[1].value);
+            urlObj.txtcol = removehashtag(inputall[2].value);
+
+            let urlPath = `http://via.placeholder.com/${urlObj.size}/${urlObj.bgcol}/${urlObj.txtcol}?text=${urlObj.text}`
+
+            myimg.src = urlPath;
+            textArea.value = urlPath;
+            textArea.focus();
+            textArea.select();
+        }
+
+        inputall.forEach((currElem) => currElem.addEventListener('change', createImagePath));
+        select.addEventListener('change', createImagePath);
+    </script>
+</body>
+
+</html>

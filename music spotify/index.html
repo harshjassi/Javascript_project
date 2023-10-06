@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img id="logo" src="Image/logo.jpeg" alt=""></li>
+            <li id="logoName">WeJam</li>
+            <li id="home">Home</li>
+            <li id="search"><i class="fa-solid fa-magnifying-glass"></i>Search</li>
+        </ul>
+    </nav>
+
+    <h1 id="heading">Popular Songs</h1>
+
+    <div class="container">
+        <div id="up">
+            <div id="left">
+                <div class="Song">
+                    <img src="cover/All my friend are toxic.jpg" class="musicPhoto" alt="">
+                    <span class="songName">All my friend</span>
+                    <span class="showTime"><span>2.51s</span><i class="fa-solid fa-play songListPlay " id="0"></i>
+                    </span>
+                </div>
+                <div class="Song">
+                    <img src="cover/Bad boys.jpg" class="musicPhoto" alt="">
+                    <span class="songName">Bad boys</span>
+                    <span class="showTime"><span>3.17s</span><i class="fa-solid fa-play songListPlay " id="1"></i>
+                    </span>
+                </div>
+                <div class="Song">
+                    <img src="cover/Bella ciao.jpg" class="musicPhoto" alt="">
+                    <span class="songName">Bell Ciao</span>
+                    <span class="showTime"><span>2.14s</span><i class="fa-solid fa-play songListPlay " id="2"></i>
+                    </span>
+                </div>
+                <div class="Song">
+                    <img src="cover/bones.jpg" class="musicPhoto" alt="">
+                    <span class="songName">Bones</span>
+                    <span class="showTime"><span>2.45s</span><i class="fa-solid fa-play songListPlay " id="3"></i>
+                    </span>
+                </div>
+                <div class="Song">
+                    <img src="cover/calm down.jpg" class="musicPhoto" alt="">
+                    <span class="songName">Calm down</span>
+                    <span class="showTime"><span>3.59s</span><i class="fa-solid fa-play songListPlay " id="4"></i>
+                    </span>
+                </div>
+                <div class="Song">
+                    <img src="cover/champion.jpg" class="musicPhoto" alt="">
+                    <span class="songName">Champion</span>
+                    <span class="showTime"><span>2.29s</span><i class="fa-solid fa-play songListPlay " id="5"></i>
+                    </span>
+                </div>
+
+            </div>
+
+            <div id="right">
+                <img src="cover/Bella ciao.jpg" class="musicPhoto" id="masterImage" alt="">
+            </div>
+
+        </div>
+
+        <div id="down">
+
+        </div>
+
+        <!-- <div class="Song">
+            <img src="cover/All my friend are toxic.jpg" class="musicPhoto" alt="">
+            <span class="songName">All my friend</span>
+            <span class="showTime"><span>2.51s</span><i class="fa-solid fa-play songListPlay " id="0"></i> </span>
+        </div>
+        <div class="Song">
+            <img src="cover/Bad boys.jpg" class="musicPhoto" alt="">
+            <span class="songName">Bad boys</span>
+            <span class="showTime"><span>3.17s</span><i class="fa-solid fa-play songListPlay " id="1"></i> </span>
+        </div>
+        <div class="Song">
+            <img src="cover/Bella ciao.jpg" class="musicPhoto" alt="">
+            <span class="songName">Bell Ciao</span>
+            <span class="showTime"><span>2.14s</span><i class="fa-solid fa-play songListPlay " id="2"></i> </span>
+        </div>
+        <div class="Song">
+            <img src="cover/bones.jpg" class="musicPhoto" alt="">
+            <span class="songName">Bones</span>
+            <span class="showTime"><span>2.45s</span><i class="fa-solid fa-play songListPlay " id="3"></i> </span>
+        </div>
+        <div class="Song">
+            <img src="cover/calm down.jpg" class="musicPhoto" alt="">
+            <span class="songName">Calm down</span>
+            <span class="showTime"><span>3.59s</span><i class="fa-solid fa-play songListPlay " id="4"></i> </span>
+        </div>
+        <div class="Song">
+            <img src="cover/champion.jpg" class="musicPhoto" alt="">
+            <span class="songName">Champion</span>
+            <span class="showTime"><span>2.29s</span><i class="fa-solid fa-play songListPlay " id="5"></i> </span>
+        </div>
+        <div class="Song">
+            <img src="cover/friends.jpg" class="musicPhoto" alt="">
+            <span class="songName">Friends</span>
+            <span class="showTime"><span>3.25s</span><i class="fa-solid fa-play songListPlay " id="6"></i> </span>
+        </div>
+        <div class="Song">
+            <img src="cover/Hey MAMA.jpg" class="musicPhoto" alt="">
+            <span class="songName">Hey MAMA</span>
+            <span class="showTime"><span>3.16s</span><i class="fa-solid fa-play songListPlay " id="7"></i> </span>
+        </div>
+        <div class="Song">
+            <img src="cover/no lie.jpg" class="musicPhoto" alt="">
+            <span class="songName">No lie</span>
+            <span class="showTime"><span>3.43s</span><i class="fa-solid fa-play songListPlay " id="8"></i> </span>
+        </div>
+        <div class="Song">
+            <img src="cover/unholy.png" class="musicPhoto" alt="">
+            <span class="songName">Unholy</span>
+            <span class="showTime"><span>2.37s</span><i class="fa-solid fa-play songListPlay " id="9"></i> </span>
+        </div> -->
+
+        <div id="bottomNavbar">
+            <input type="range" id="timeDetail">
+            <span id="masterTime"></span>
+            <span id="currentTime"> 0.00s </span> 
+            <div class="playButton">
+                <i class="fa-solid fa-backward-step " id="backward"></i>
+                <i class="fa-solid fa-play" id="masterPlay"></i>
+                <i class="fa-solid fa-forward-step" id="forward"></i>
+            </div>
+            <img id="gif" src="Image/playing.gif" alt="">
+            <span id="masterSongName">All My Friend</span>
+            <i id="repeat" class="fa-sharp fa-solid fa-repeat"></i>
+        </div>
+
+        <script src="https://kit.fontawesome.com/22dd0a5af8.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  padding: .7rem 2rem .5rem 1.5rem;
+  background-color: rgb(163, 248, 172);
+  font-size: 3rem;
+}
+
+h1 i {
+  animation: harsh 2s linear infinite;
+}
+
+@keyframes harsh {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fas {
+  margin: 1.4rem;
+}
+
+#addNote {
+  border: 0;
+  position: absolute;
+  top: 9rem;
+  right: 2rem;
+  font-size: 1.2rem;
+  /* padding: .3rem .1rem ; */
+  padding-right: .5rem;
+  background-color: BLACK;
+  color: white;
+  text-decoration: solid;
+  border-radius: 2rem;
+}
+
+#addNote:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border:2px solid black;
+}
+#main{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.notes {
+  width: 350px;
+  height: 250px;
+  margin-top: 7.5rem;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+
+.operation {
+  display: flex;
+  justify-content: end;
+  background-color: rgb(15, 206, 249);
+  align-items: center;
+  height: 3rem;
+  box-shadow: 0 1rem 6px black;
+}
+
+.operation button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.delete {
+  color: red;
+}
+
+.delete:hover {
+  color: rgb(253, 95, 68);
+  background-color: white;
+}
+
+.edit {
+  color: green;
+}
+
+.edit:hover {
+  color: rgb(125, 227, 125);
+  background-color: white;
+}
+
+.operation button i {
+  width: .8rem;
+  height: auto;
+}
+
+.notes textarea {
+  border: none;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  font-size: 18px;
+  background-color: lightblue;
+
+}
+
+.notes textarea:focus {
+  border: none;
+  outline: none;
+}

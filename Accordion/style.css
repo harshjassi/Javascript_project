@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#accordion {
+    margin: 100px auto;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item {
+    box-shadow: 0 0 20px 4px white;
+    padding: 12px;
+    margin: 24px;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.number {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.icon {
+    width: 40px;
+    height: 34px;
+}
+
+.hiddenBox {
+    grid-column: 2/3;
+    font-size: 20px;
+    display: none;
+}
+
+.active .hiddenBox {
+    display: block;
+}
+
+.hiddenBox ul {
+    display: flex;
+    gap: 23px;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.hiddenBox ul li {
+    letter-spacing: .5px;
+    word-spacing: 2px;
+    font-size: 17px;
+    margin-left: 35px;
+    line-height: 1;
+}
+
+.active {
+    position: relative;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-top: 3px solid yellow;
+    animation: borderLine 1s linear;
+}
+
+@keyframes borderLine {
+    0% {
+        width: 2%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,249 @@
+/* font-family: 'Dancing Script', cursive; bottom song name */
+/* font-family: 'Young Serif', serif; */
+/* font-family: 'Fuggles', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(193, 252, 206);
+    color: black;
+}
+
+nav {
+    background-color: rgb(200, 80, 237);
+}
+
+#home {
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#search {
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    font-size: 25px;
+    margin: .4rem 1rem;
+    list-style: none;
+}
+
+#logo {
+    margin: .4rem 1rem;
+    width: 5.7rem;
+    height: 4.4rem;
+    border-radius: 5px;
+    align-items: center;
+}
+
+#logoName {
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: auto 2rem auto -0.5rem;
+}
+
+#heading {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#bottomNavbar {
+    position: sticky;
+    bottom: 0px;
+    font-size: 1.8rem;
+    margin: 10px 0 0 0;
+    padding: 7px;
+    background-color: rgb(245, 157, 247);
+    /* height: 5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#timeDetail {
+    width: 70vw;
+    margin-bottom: 10px;
+}
+
+#timeDetail:hover {
+    cursor: pointer;
+}
+
+.bottom span {
+    position: absolute;
+    left: 12rem;
+}
+
+.container {
+    /* height: auto; */
+    /* background-color: black; */
+    /* border: 2px solid red; */
+    /* border-radius: 12px; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-image: url('Image/bg.webp'); */
+    /* background-size: 100vw 100vh; */
+    /* display: grid; */
+    width: 95vw;
+    margin: 1rem auto 0 auto;
+    padding: .5rem .5rem 0 0.5rem;
+}
+
+#up {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+}
+
+#left {
+    border: 2px solid red;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#right {
+    border: 2px solid red;
+    margin: 1rem;
+    padding: 10px;
+
+}
+
+#down {
+    border: 2px solid red;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#left .Song {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 18rem;
+    height: 19.5rem;
+    margin: 5px 0.7rem;
+}
+
+#left .musicPhoto {
+    margin: auto;
+    width: 16.5rem;
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+.songName {
+    text-align: center;
+    margin: 5px auto 0 auto;
+}
+
+.showTime {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+#down .Song {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    width: 22rem;
+    height: 30rem;
+    margin: 7px 0.7rem;
+}
+
+#down .musicPhoto {
+    margin: auto;
+    width: 21rem;
+    height: 24rem;
+    border-radius: 1rem;
+}
+
+.playButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid {
+    font-size: 2.4rem;
+    margin: .2rem 1rem;
+}
+
+#left .fa-solid{
+    /* opacity: 0.4; */
+    font-size: 1.5rem;
+}
+.fa-solid:hover {
+    color: rgb(105, 103, 104);
+    cursor: pointer;
+}
+
+#masterTime {
+    padding: .5rem;
+    width: 85vw;
+    position: absolute;
+    top: -0.1rem;
+    left: 6rem;
+}
+
+#masterSongName {
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    left: 21rem;
+    margin-top: 15px;
+    /* opacity: -1; */
+    transition: opacity 1s ease-in-out;
+}
+
+#gif {
+    width: 3.7rem;
+    height: 1.8rem;
+    margin-top: 15px;
+    border-radius: 0.3rem;
+    position: absolute;
+    left: 15rem;
+    /* opacity: -1; */
+    transition: opacity 1s ease-in-out;
+}
+#currentTime{
+    position: absolute;
+    top: -0.8rem;
+    right: 7.5rem;
+    margin-top: 15px;
+}
+#repeat{
+    position: absolute;
+    right: 15rem;
+    margin-top: 15px;
+}
+
+#masterImage {
+    /* width: 30rem; */
+    /* height: 30rem; */
+    margin: auto;
+    padding: auto;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
